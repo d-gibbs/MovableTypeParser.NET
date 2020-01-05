@@ -1,5 +1,4 @@
 # C# .NET MovableTypeParser
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Easily parse .mtif (movable type import files) into C# strongly typed objects.
 
