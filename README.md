@@ -1,9 +1,9 @@
 # C# .NET MovableTypeParser
 
-Easily parse .mtif (movable type import files) into C# strongly typed objects.
+Easily parse mtif (movable type import files) into C# strongly typed objects.
 
 # Usage
-Create an instance of an `MTIFParser` and provide the path to your .mtif - thats it!
+Create an instance of an `MTIFParser` providing the path to your file and call the `Parse()` method - thats it!
 ```
 var parser = new MTIFParser("/path-to-file/export.txt");
 var posts = parser.Parse();

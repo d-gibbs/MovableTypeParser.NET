@@ -1,0 +1,47 @@
+﻿AUTHOR: Joe Bloggs
+AUTHOR EMAIL: joe@bloggs.com
+TITLE: Foo post title
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: wysiwyg
+ALLOW PINGS: 0
+BASENAME: foo-post-basename
+TAGS: "Foo bar",Foo,Bar
+NO ENTRY: 1
+CATEGORY: Foo category
+CATEGORY: Bar category
+CATEGORY: Foo bar category
+PRIMARY CATEGORY: Foo primary category
+
+UNIQUE URL: https://www.example.com/foo-bar.html
+DATE: 01/01/2020 09:50:00 AM
+-----
+BODY:
+<p>Foo body text</p>
+-----
+EXTENDED BODY:
+<p>Foo extended body</p>
+-----
+EXCERPT:
+Foo excerpt
+-----
+KEYWORDS:
+Foo keywords
+-----
+PING:
+TITLE: Foo ping 1
+IP: 127.0.0.1
+URL: http://example.com/ping/foo
+DATE: 01/02/2020 09:50:00 AM
+BLOG NAME: Foo blog name 1
+Ping 1 excerpt text
+-----
+PING:
+TITLE: Foo ping 2
+IP: 127.0.0.1
+URL: http://example.com/ping/foo/bar
+DATE: 01/03/2020 09:50:00 AM
+BLOG NAME: Foo blog name 2
+Ping 2 excerpt text
+-----
+--------

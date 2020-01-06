@@ -1,4 +1,6 @@
-﻿namespace MovableTypeParser.Core
+﻿[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("MovableTypeParser.Tests")]
+
+namespace MovableTypeParser.Core
 {
     using System;
     using System.Collections.Generic;
@@ -18,9 +20,9 @@
         private readonly ParserUtils _utils;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MTIFParser"/> class for reading .mtif files.
+        /// Initializes a new instance of the <see cref="MTIFParser"/> class for reading movable type formatted files.
         /// </summary>
-        /// <param name="filePath">The path to the .mtif file to parse.</param>
+        /// <param name="filePath">Path to the file to open.</param>
         public MTIFParser(string filePath)
         {
             _filePath = filePath;
@@ -28,16 +30,16 @@
         }
 
         /// <summary>
-        /// Parses .mtif data into a collection of posts.
+        /// Parses the provided file into an <see cref="IEnumerable{Post}">IEnumerable&lt;Post&gt;</see>.
         /// </summary>
-        /// <returns>A collection of posts parsed from the provided .mtif file.</returns>
+        /// <returns>A collection of posts parsed from the provided file.</returns>
         public IEnumerable<Post> Parse()
         {
             using (var stream = File.OpenText(_filePath))
             {
                 var post = new Post();
-                string currentLine = string.Empty;
 
+                string currentLine;
                 while ((currentLine = stream.ReadLine()) != null)
                 {
                     if (_utils.IsPostLine(currentLine))
@@ -297,7 +299,7 @@
                     // Maintain the current line being read
                     comment.Body = string.Concat(currentLine, Environment.NewLine);
 
-                    // Read to section end as comment body
+                    // Read the rest to section end as comment body
                     comment.Body += ReadStringSection(stream);
                     comment.Body = comment.Body.Trim();
 
@@ -390,7 +392,7 @@
                     // Maintain the current line being read
                     ping.Excerpt = string.Concat(currentLine, Environment.NewLine);
 
-                    // Read to section end as ping excerpt
+                    // Read the rest to section end as ping excerpt
                     ping.Excerpt += ReadStringSection(stream);
                     ping.Excerpt = ping.Excerpt.Trim();
 

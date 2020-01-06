@@ -1,4 +1,6 @@
-﻿namespace MovableTypeParser.Utils
+﻿[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("MovableTypeParser.Tests")]
+
+namespace MovableTypeParser.Utils
 {
     using System;
     using System.Linq;
