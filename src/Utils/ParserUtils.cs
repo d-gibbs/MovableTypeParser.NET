@@ -1,4 +1,4 @@
-﻿namespace MovableTypeParser
+﻿namespace MovableTypeParser.Utils
 {
     using System;
     using System.Linq;
@@ -46,6 +46,16 @@
         public bool IsMultiLine(string currentLine)
         {
             return Constants.Keys.MultiLineKeys.Any(x => currentLine.StartsWith($"{x}:", StringComparison.OrdinalIgnoreCase));
+        }
+
+        /// <summary>
+        /// Determines whether the current line being read is an 'End of Section' delimiter.
+        /// </summary>
+        /// <param name="currentLine">The current line being read.</param>
+        /// <returns>A value indicating whether the current line being read is an 'End of Section' delimiter..</returns>
+        public bool IsEndOfSection(string currentLine)
+        {
+            return currentLine.Equals(Constants.Delimiters.EndOfSection, StringComparison.OrdinalIgnoreCase);
         }
 
         /// <summary>

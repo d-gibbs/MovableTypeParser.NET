@@ -1,4 +1,4 @@
-﻿namespace MovableTypeParser
+﻿namespace MovableTypeParser.Utils
 {
     using System.Text.RegularExpressions;
 

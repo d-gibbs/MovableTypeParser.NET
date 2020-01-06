@@ -1,4 +1,4 @@
-﻿namespace MovableTypeParser
+﻿namespace MovableTypeParser.Core
 {
     using System;
     using System.Collections.Generic;
@@ -7,20 +7,21 @@
     using System.Linq;
     using System.Text;
     using Models;
+    using Utils;
 
     /// <summary>
     /// Parses movable type import files.
     /// </summary>
-    public class MovableTypeParser
+    public class MTIFParser
     {
         private readonly string _filePath;
         private readonly ParserUtils _utils;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MovableTypeParser"/> class for reading .mtif files.
+        /// Initializes a new instance of the <see cref="MTIFParser"/> class for reading .mtif files.
         /// </summary>
         /// <param name="filePath">The path to the .mtif file to parse.</param>
-        public MovableTypeParser(string filePath)
+        public MTIFParser(string filePath)
         {
             _filePath = filePath;
             _utils = new ParserUtils();
@@ -456,7 +457,7 @@
             var buffer = new StringBuilder();
             string currentLine;
             while ((currentLine = stream.ReadLine()) != null &&
-                   !currentLine.Equals(Constants.Delimiters.EndOfSection))
+                   !_utils.IsEndOfSection(currentLine))
             {
                 buffer.AppendLine(currentLine);
             }
