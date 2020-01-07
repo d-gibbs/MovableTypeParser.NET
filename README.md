@@ -1,5 +1,7 @@
 # C# .NET MovableTypeParser
 
+[![Build Status](https://dev.azure.com/duanegibbs/MovableTypeParser/_apis/build/status/d-gibbs.MovableTypeParser?branchName=master)](https://dev.azure.com/duanegibbs/MovableTypeParser/_build/latest?definitionId=1&branchName=master)
+
 Easily parse mtif (movable type import files) into C# strongly typed objects.
 
 # Usage
