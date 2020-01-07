@@ -282,7 +282,7 @@ namespace MovableTypeParser.Core
 
                             case Constants.Keys.Date:
 
-                                if (comment.Date == default)
+                                if (comment.Date == default(DateTime))
                                 {
                                     if (DateTime.TryParseExact(kvp.Item2, new string[] { "MM/dd/yyyy hh:mm:ss tt", "MM/dd/yyyy hh:mm:ss" }, null, DateTimeStyles.None, out DateTime date))
                                     {
@@ -375,7 +375,7 @@ namespace MovableTypeParser.Core
 
                             case Constants.Keys.Date:
 
-                                if (ping.Date == default)
+                                if (ping.Date == default(DateTime))
                                 {
                                     if (DateTime.TryParseExact(kvp.Item2, new string[] { "MM/dd/yyyy hh:mm:ss tt", "MM/dd/yyyy hh:mm:ss" }, null, DateTimeStyles.None, out DateTime date))
                                     {

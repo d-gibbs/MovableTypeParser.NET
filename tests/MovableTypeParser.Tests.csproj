@@ -6,7 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82DB054D-8BD3-4C4B-BC15-E6C341D8009B}</ProjectGuid>
+    <ProjectGuid>{74FD7ECA-4044-4D92-ADBE-783178B58445}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MovableTypeParser.Tests</RootNamespace>
@@ -52,13 +52,13 @@
     <Compile Include="Unit\ParserUtilsTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MovableTypeParser.csproj">
+    <ProjectReference Include="..\src\MovableTypeParser.csproj">
       <Project>{3c29a798-36dd-4e3b-a831-08eaa11bcbe6}</Project>
       <Name>MovableTypeParser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TestData\MultiplePosts.txt">
