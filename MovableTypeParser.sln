@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovableTypeParser", "MovableTypeParser.csproj", "{3C29A798-36DD-4E3B-A831-08EAA11BCBE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovableTypeParser", "src\MovableTypeParser.csproj", "{3C29A798-36DD-4E3B-A831-08EAA11BCBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovableTypeParser.Tests", "tests\MovableTypeParser.Tests.csproj", "{74FD7ECA-4044-4D92-ADBE-783178B58445}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3C29A798-36DD-4E3B-A831-08EAA11BCBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C29A798-36DD-4E3B-A831-08EAA11BCBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C29A798-36DD-4E3B-A831-08EAA11BCBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FD7ECA-4044-4D92-ADBE-783178B58445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FD7ECA-4044-4D92-ADBE-783178B58445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FD7ECA-4044-4D92-ADBE-783178B58445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FD7ECA-4044-4D92-ADBE-783178B58445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
