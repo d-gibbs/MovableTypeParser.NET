@@ -19,7 +19,7 @@ Install package from nuget.org or clone repository and build locally.
 
 ### Todos
 
- - Add tests
+ - Write more tests
 
 License
 ----
