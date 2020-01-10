@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>C# .NET MovableTypeParser</title>
+    <authors>Duane Gibbs</authors>
+    <owners>Duane Gibbs</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/d-gibbs/MovableTypeParser</projectUrl>
+    <description>Easily parse mtif (movable type import files) into C# strongly typed objects.</description>
+    <copyright>Copyright 2020</copyright>
+    <tags>mtif parser parsemtif c# dotnet</tags>
+  </metadata>
+</package>

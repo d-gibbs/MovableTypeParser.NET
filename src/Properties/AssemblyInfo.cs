@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MovableTypeParser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("C# .NET MovableTypeParser")]
+[assembly: AssemblyDescription("Easily parse mtif (movable type import files) into C# strongly typed objects.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MovableTypeParser")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Duane Gibbs")]
+[assembly: AssemblyProduct("C# .NET MovableTypeParser")]
+[assembly: AssemblyCopyright("Copyright © 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
