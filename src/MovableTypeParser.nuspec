@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>MovableTypeParser.NET</id>
     <version>$version$</version>
-    <title>C# .NET MovableTypeParser</title>
+    <title>MovableTypeParser.NET</title>
     <authors>Duane Gibbs</authors>
     <owners>Duane Gibbs</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
