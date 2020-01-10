@@ -1,4 +1,4 @@
-# C# .NET MovableTypeParser
+# C# MovableTypeParser.NET
 
 [![Build Status](https://dev.azure.com/duanegibbs/MovableTypeParser/_apis/build/status/d-gibbs.MovableTypeParser?branchName=master)](https://dev.azure.com/duanegibbs/MovableTypeParser/_build/latest?definitionId=1&branchName=master)
 
