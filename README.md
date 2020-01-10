@@ -19,10 +19,6 @@ Install package from nuget.org or clone repository and build locally.
 
 - None
 
-### Todos
-
- - Write more tests
-
 License
 ----
 
